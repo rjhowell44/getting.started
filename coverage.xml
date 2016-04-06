@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE coverage
+  SYSTEM 'http://cobertura.sourceforge.net/xml/coverage-03.dtd'>
+<coverage >
+<sources>
+<source>/home/ubuntu/getting.started/app.source</source>
+</sources>
+<packages>
+<package name="HelloLIB">
+<classes>
+<class filename="HelloLIB/hello-1.cpp">
+<methods/>
+<lines>
+<line branch="false" hits="1" number="1"/>
+<line branch="false" hits="1" number="2"/>
+<line branch="false" hits="1" number="3"/>
+<line branch="false" hits="0" number="4"/>
+<line branch="true" condition-coverage="50% (2/4)" hits="1" number="5">
+<conditions/>
+</line>
+</lines>
+</class>
+<class filename="HelloLIB/hello-2.cpp">
+<methods/>
+<lines>
+<line branch="false" hits="1" number="6"/>
+<line branch="false" hits="1" number="7"/>
+<line branch="false" hits="1" number="8"/>
+<line branch="false" hits="0" number="9"/>
+<line branch="true" condition-coverage="50% (5/5)" hits="1" number="10">
+<conditions/>
+</line>
+</lines>
+</class>
+</classes>
+</package>
+<package name="WhatIfLIB">
+<classes>
+<class filename="WhatIfLIB/whatif-1.cpp">
+<methods/>
+<lines>
+<line branch="false" hits="1" number="1"/>
+<line branch="false" hits="1" number="2"/>
+<line branch="false" hits="0" number="3"/>
+<line branch="false" hits="0" number="4"/>
+<line branch="true" condition-coverage="24% (1/4)" hits="1" number="5">
+<conditions/>
+</line>
+</lines>
+</class>
+</classes>
+</package>
+</packages>
+</coverage>

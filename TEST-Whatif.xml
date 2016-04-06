@@ -1,0 +1,17 @@
+<testsuites tests="4" failures="1" disabled="0" errors="0" timestamp="2016-02-06T05:41:17"  name="WhatIf">
+  <testsuite name="What if This Suite Passes" tests="2" failures="0" time="0.03">
+    <testcase name="This is test 1" status="run" time="0.01" classname="What if This Suite Passes"/>
+	  <testcase name="This is test 2" status="run" time="0.02" classname="What if This Suite Passes"/>
+  </testsuite>
+  <testsuite name="What if This Suite Fails" tests="2" failures="1" time="0.050">
+    <testcase name="This is test 1"        status="run" time="0.010" classname="What if This Suite Fails" />
+	  <testcase name="This is test 2: Ouch!" status="run" time="0.040" classname="What if This Suite Fails">
+      <failure message="ouch_unittest.cc:102&#x0A;Value of: 2&#x0A;Expected: 1&#x0A;This test fails in order to demonstrate failure messages" type="">
+	    <![CDATA[../ouch_unittest.cc:102
+         Value of: 2
+         Expected: 1
+         Typically here there can be A LOT MORE information used for debugging the failure. ]]>
+	  </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

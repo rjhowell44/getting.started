@@ -1,0 +1,75 @@
+Ign http://extra.linuxmint.com rosa InRelease
+Ign http://packages.linuxmint.com rosa InRelease
+Ign http://archive.ubuntu.com trusty InRelease
+Hit http://extra.linuxmint.com rosa Release.gpg
+Hit http://packages.linuxmint.com rosa Release.gpg
+Get:1 http://archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+Get:2 http://security.ubuntu.com trusty-security InRelease [65.9 kB]
+Hit http://extra.linuxmint.com rosa Release
+Hit http://packages.linuxmint.com rosa Release
+Hit http://extra.linuxmint.com rosa/main amd64 Packages
+Hit http://packages.linuxmint.com rosa/main amd64 Packages
+Hit http://packages.linuxmint.com rosa/upstream amd64 Packages
+Hit http://extra.linuxmint.com rosa/main i386 Packages
+Hit http://archive.ubuntu.com trusty Release.gpg
+Get:3 http://archive.ubuntu.com trusty-updates/main amd64 Packages [696 kB]
+Hit http://packages.linuxmint.com rosa/import amd64 Packages
+Get:4 http://security.ubuntu.com trusty-security/main amd64 Packages [416 kB]
+Hit http://packages.linuxmint.com rosa/main i386 Packages
+Hit http://packages.linuxmint.com rosa/upstream i386 Packages
+Hit http://packages.linuxmint.com rosa/import i386 Packages
+Ign http://extra.linuxmint.com rosa/main Translation-en_US
+Ign http://extra.linuxmint.com rosa/main Translation-en
+Get:5 http://archive.ubuntu.com trusty-updates/restricted amd64 Packages [16.0 kB]
+Get:6 http://security.ubuntu.com trusty-security/restricted amd64 Packages [13.0 kB]
+Get:7 http://archive.ubuntu.com trusty-updates/universe amd64 Packages [336 kB]
+Get:8 http://security.ubuntu.com trusty-security/universe amd64 Packages [123 kB]
+Get:9 http://security.ubuntu.com trusty-security/multiverse amd64 Packages [4,990 B]
+Get:10 http://security.ubuntu.com trusty-security/main i386 Packages [389 kB]
+Ign http://archive.canonical.com trusty InRelease
+Hit http://archive.canonical.com trusty Release.gpg
+Hit http://archive.canonical.com trusty Release
+Hit http://archive.canonical.com trusty/partner amd64 Packages
+Get:11 http://security.ubuntu.com trusty-security/restricted i386 Packages [12.7 kB]
+Get:12 http://archive.ubuntu.com trusty-updates/multiverse amd64 Packages [13.2 kB]
+Hit http://archive.canonical.com trusty/partner i386 Packages
+Get:13 http://security.ubuntu.com trusty-security/universe i386 Packages [123 kB]
+Ign http://packages.linuxmint.com rosa/import Translation-en_US
+Get:14 http://archive.ubuntu.com trusty-updates/main i386 Packages [671 kB]
+Ign http://packages.linuxmint.com rosa/import Translation-en
+Hit http://archive.canonical.com trusty/partner Translation-en
+Get:15 http://security.ubuntu.com trusty-security/multiverse i386 Packages [5,164 B]
+Ign http://packages.linuxmint.com rosa/main Translation-en_US
+Ign http://packages.linuxmint.com rosa/main Translation-en
+Ign http://packages.linuxmint.com rosa/upstream Translation-en_US
+Hit http://security.ubuntu.com trusty-security/main Translation-en
+Ign http://packages.linuxmint.com rosa/upstream Translation-en
+Hit http://security.ubuntu.com trusty-security/multiverse Translation-en
+Hit http://security.ubuntu.com trusty-security/restricted Translation-en
+Hit http://security.ubuntu.com trusty-security/universe Translation-en
+Get:16 http://archive.ubuntu.com trusty-updates/restricted i386 Packages [15.7 kB]
+Get:17 http://archive.ubuntu.com trusty-updates/universe i386 Packages [337 kB]
+Get:18 http://archive.ubuntu.com trusty-updates/multiverse i386 Packages [13.4 kB]
+Hit http://archive.ubuntu.com trusty-updates/main Translation-en
+Hit http://archive.ubuntu.com trusty-updates/multiverse Translation-en
+Hit http://archive.ubuntu.com trusty-updates/restricted Translation-en
+Hit http://archive.ubuntu.com trusty-updates/universe Translation-en
+Hit http://archive.ubuntu.com trusty Release
+Hit http://archive.ubuntu.com trusty/main amd64 Packages
+Hit http://archive.ubuntu.com trusty/restricted amd64 Packages
+Hit http://archive.ubuntu.com trusty/universe amd64 Packages
+Hit http://archive.ubuntu.com trusty/multiverse amd64 Packages
+Hit http://archive.ubuntu.com trusty/main i386 Packages
+Hit http://archive.ubuntu.com trusty/restricted i386 Packages
+Hit http://archive.ubuntu.com trusty/universe i386 Packages
+Hit http://archive.ubuntu.com trusty/multiverse i386 Packages
+Hit http://archive.ubuntu.com trusty/main Translation-en
+Hit http://archive.ubuntu.com trusty/multiverse Translation-en
+Hit http://archive.ubuntu.com trusty/restricted Translation-en
+Hit http://archive.ubuntu.com trusty/universe Translation-en
+Ign http://archive.ubuntu.com trusty/main Translation-en_US
+Ign http://archive.ubuntu.com trusty/multiverse Translation-en_US
+Ign http://archive.ubuntu.com trusty/restricted Translation-en_US
+Ign http://archive.ubuntu.com trusty/universe Translation-en_US
+Fetched 3,317 kB in 10s (302 kB/s)
+Reading package lists...
