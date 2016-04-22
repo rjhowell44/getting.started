@@ -1,0 +1,6 @@
+before_install:
+  # Install Testspace Runner
+  - ./testspace_install.sh
+  - export PATH="${HOME}/testspace:${PATH}"
+script:
+  - testspace publish [MyTests]TEST*.xml coverage.xml "@log.txt{this is my test log}" ${TESTSPACE_URL}
