@@ -25,7 +25,7 @@ Checkout the [Space](https://samples.testspace.com/projects/getting.started/spac
 To fork this example using Travis requires:
   - Account at www.testspace.com.
   - Travis Environment Variable: 
-    - `TESTSPACE_URL` = `token:@my-org-name.testspace.com/my-project/my-space`
-    - `token` set to the `value` defined as your [Access token](http://help.testspace.com/using-your-organization:user-settings).
-    - `my-org-name.testspace.com/my-project/my-space` based on your subdomain, project, and space names. Refer [here](http://help.testspace.com/reference:runner-reference#config) for more details. 
+    - `TESTSPACE_URL` = `credentials:@my-org-name.testspace.com/my-project/my-space`
+    - `credentials` set to `username:password` or your [access token](http://help.testspace.com/using-your-organization:user-settings).
+    - `my-org-name.testspace.com/my-project/my-space` based on your subdomain, project, and space names. Refer [here](http://help.testspace.com/reference:runner-reference#login-credentials) for more details. 
     
