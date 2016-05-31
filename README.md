@@ -15,7 +15,7 @@ Contains a set of simple files to show publishing test results, code coverage, a
 
 
 <pre>
-testspace publish [MyTests]TEST*.xml coverage.xml "@log.txt{this is my test log}" 
+testspace publish [MyTests]TEST*.xml coverage.xml "+log.txt{this is my test log}" 
 </pre>
 
 Checkout the [Space](https://samples.testspace.com/projects/getting.started/spaces/my-results). Refer to this [article](http://help.testspace.com/getting-started:publish-results) for more information on publishing results. 
