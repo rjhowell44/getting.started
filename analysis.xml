@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<checkstyle>
+  <file name='/home/ubuntu/workspace/whatlib/what.extension'>
+    <error line='130' severity='error' message='[Medium][Cross Site] STANDARD 4.1.1 content_tag does not escape double quotes in attribute values (CVE-2016-6316). Upgrade to 4.2.7.1
+https://groups.google.com/d/msg/security-ann/8B2iV2tPRSE/JkjCJkSoCgAJ'/>
+  </file>
+  <file name='/home/ubuntu/workspace/whatlib/what.extension'>
+    <error line='130' severity='error' message='[Medium][Denial of Service] STANDARD 4.1.1 is vulnerable to denial of service via mime type caching (CVE-2016-0751). Upgrade to Rails version 4.1.14.1
+https://groups.google.com/d/msg/security/9oLY_FCzvoc/w9oI9XxbFQAJ'/>
+  </file>
+  <file name='/home/ubuntu/workspace/thatlib/this.ext'>
+    <error line='130' severity='error' message='[Medium][Denial of Service] OLD STANDARD 3.5.1 is XML parsing (CVE-2015-3227). Upgrade to to latest version 5.14
+https://groups.google.com/d/msg/new-security/bahr2JLnxvk/x4EocXnHPp8J'/>
+  </file>
+</checkstyle>

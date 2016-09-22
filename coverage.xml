@@ -6,9 +6,9 @@
 <source>/home/ubuntu/getting.started/app.source</source>
 </sources>
 <packages>
-<package name="HelloLIB">
+<package name="That and This Library">
 <classes>
-<class filename="HelloLIB/hello-1.cpp">
+<class filename="ThatLIB/that.cpp">
 <methods/>
 <lines>
 <line branch="false" hits="1" number="1"/>
@@ -20,7 +20,7 @@
 </line>
 </lines>
 </class>
-<class filename="HelloLIB/hello-2.cpp">
+<class filename="ThisLIB/this.cpp">
 <methods/>
 <lines>
 <line branch="false" hits="1" number="6"/>
@@ -34,9 +34,9 @@
 </class>
 </classes>
 </package>
-<package name="WhatIfLIB">
+<package name="What Library">
 <classes>
-<class filename="WhatIfLIB/whatif-1.cpp">
+<class filename="WhatLIB/what.cpp">
 <methods/>
 <lines>
 <line branch="false" hits="1" number="1"/>
