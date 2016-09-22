@@ -1,6 +1,3 @@
-before_install:
-  # Install Testspace Runner
-  - ./testspace_install.sh
-  - export PATH="${HOME}/testspace:${PATH}"
-script:
-  - testspace publish [MyTests]TEST*.xml coverage.xml "+log.txt{this is my test log}" ${TESTSPACE_URL}
+script:  
+  - curl -s https://testspace-client.s3.amazonaws.com/testspace-linux.tgz | sudo tar -zxvf- -C /usr/local/bin
+  - testspace analysis.xml [tests]*test.xml coverage.xml $TESTSPACE_TOKEN/my-space#travis.Build.${TRAVIS_BUILD_NUMBER}
