@@ -1,34 +1,37 @@
-[![Testspace](http://www.testspace.com/public/img/testspace_logo.png)](http://www.testspace.com)
+[![Testspace](http://www.testspace.com/img/Testspace.png)](http://www.testspace.com)
 
 ***
 
 ## Publishing sample for demonstrating Testspace 
 
-
 Contains a set of simple files to show publishing test results, code coverage, and static analysis. 
 
 ***
-[![Space Health](https://samples.testspace.com/projects/87/spaces/459/badge)](https://samples.testspace.com/projects/87/spaces/459 "Test Cases")
-[![Space Metric](https://samples.testspace.com/projects/87/spaces/459/metrics/320/badge)](https://samples.testspace.com/spaces/459/schema/Code%20Coverage "Code Coverage (lines)")
-[![Space Metric](https://samples.testspace.com/projects/87/spaces/459/metrics/321/badge)](https://samples.testspace.com/spaces/459/schema/Static%20Analysis "Static Analysis (issues)")
+
+Publishing **Test Content** using www.testspace.com.
+
+[![Space Health](https://samples.testspace.com/projects/171/spaces/833/badge)](https://samples.testspace.com/projects/171/spaces/833 "Test Cases")
+[![Space Metric](https://samples.testspace.com/projects/171/spaces/833/metrics/833/badge)](https://samples.testspace.com/spaces/833/schema/Code%20Coverage "Code Coverage (lines)")
+[![Space Metric](https://samples.testspace.com/projects/171/spaces/833/metrics/834/badge)](https://samples.testspace.com/spaces/833/schema/Static%20Analysis "Static Analysis (issues)")
 
 
 ***
 
+Push Content using **Testspace client**: 
 
 <pre>
 curl -s https://testspace-client.s3.amazonaws.com/testspace-linux.tgz | sudo tar -zxvf- -C /usr/local/bin
-testspace analysis.xml [tests]*test.xml coverage.xml "my-space"
-</pre>
+testspace @.testspace.txt $TESTSPACE_TOKEN/$GITHUB_ORG:$REPO_NAME/$BRANCH_NAME#$BUILD_NUMBER
+</pre> 
 
-Checkout the [Space](https://samples.testspace.com/projects/getting.started). Refer to this [article](http://help.testspace.com/getting-started:publish-some-results) for more information on publishing results. 
+Checkout the published [Test Content](https://samples.testspace.com/projects/testspace-samples:getting.started). Note that the `.testspace.txt` file contains the [set of files](http://help.testspace.com/how-to:publish-content#publishing-via-content-list-file) to publish. 
 
 ***
 
 To replicate this sample: 
-  - Account at www.testspace.com.
-  - CI Environment Variable called **TESTSPACE_TOKEN** required:
-    -  `TESTSPACE_TOKEN` = `credentials@my-org-name.testspace.com/my-project`
-    - `credentials` set to `username:password` or your [access token](http://help.testspace.com/reference:client-reference#login-credentials).
-    - `my-org-name.testspace.com/my-project` based on your *organization* (subdomain) and *project* names.  
-
+  - Setup account at www.testspace.com.
+  - Create a Environment variable called `TESTSPACE_TOKEN`
+     - `TESTSPACE_TOKEN` = `credentials@Your-Org-Name.testspace.com`
+     - `credentials` set to `username:password` or your [access token](http://help.testspace.com/reference:client-reference#login-credentials)
+     - To [use Testspace with a CI system](http://help.testspace.com/how-to:add-to-ci-workflow), store `TESTSPACE_TOKEN` as a secure environment variable
+ 

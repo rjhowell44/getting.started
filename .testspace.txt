@@ -1,0 +1,4 @@
+analysis.xml 
+[tests]*test.xml 
+[Timing]myOutput.log{myMetrics.csv}
+coverage.xml
