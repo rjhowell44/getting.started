@@ -10,9 +10,9 @@ Contains a set of simple files to show publishing test results, code coverage, a
 
 Publishing **Test Content** using www.testspace.com.
 
-[![Space Health](https://samples.testspace.com/projects/171/spaces/833/badge)](https://samples.testspace.com/projects/171/spaces/833 "Test Cases")
-[![Space Metric](https://samples.testspace.com/projects/171/spaces/833/metrics/833/badge)](https://samples.testspace.com/spaces/833/schema/Code%20Coverage "Code Coverage (lines)")
-[![Space Metric](https://samples.testspace.com/projects/171/spaces/833/metrics/834/badge)](https://samples.testspace.com/spaces/833/schema/Static%20Analysis "Static Analysis (issues)")
+[![Space Health](https://samples.testspace.com/spaces/833/badge)](https://samples.testspace.com/spaces/833 "Test Cases")
+[![Space Metric](https://samples.testspace.com/spaces/833/metrics/833/badge)](https://samples.testspace.com/spaces/833/schema/Code%20Coverage "Code Coverage (lines)")
+[![Space Metric](https://samples.testspace.com/spaces/833/metrics/834/badge)](https://samples.testspace.com/spaces/833/schema/Static%20Analysis "Static Analysis (issues)")
 
 
 ***
