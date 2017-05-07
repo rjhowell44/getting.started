@@ -1,37 +1,6 @@
 [![Testspace](http://www.testspace.com/img/Testspace.png)](http://www.testspace.com)
 
-## Getting Started with Testspace Standalone Projects.
-
-The first step when getting started is to create your Testspace Organization. When you sign into Testspace to create your account, select and `Organization Name` to be used as the subdomain for your Testspace URL.
-
-```
-   my-organization-name.testspace.com
-```
-
-### Creating your first Standalone Project and Space
-
-After completing the new account process, and everytime you login into your new organization, you'll land on the Projects tab, the home view for your Testspace Organization.
-
-On first time access, your Projects page will display the folloiwng
-
-![New Oraganization](images/new-org-projects-tab.png)
-
-Select the `New Project` button to bring up the dialog below.
-
-![New Project Dialog](images/new-project-dialog.png)
-
-Provide a project name and optional description - notification settings can be changed at anytime. 
-Select `Submit`, and then select the name-link for your new project to go to the `Spaces tab` which should look like
-
-![New Project Spaces Tab](images/new-project-spaces-tab.png)
-
-Select the `New Space` button to bring the dialog below
-
-![New Space Diaglg](images/new-space-dialog.png)
-
----
-
-
+***
 
 ## Publishing sample for demonstrating Testspace 
 
