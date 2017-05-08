@@ -2,7 +2,7 @@
 
 ## Getting Started with Testspace Standalone Projects.
 
-The first step when getting started is to create your Testspace Organization. When you [sign into](https://www.testspace.com/pricing.html) Testspace to create your account, select and `Organization Name` to be used as the subdomain for your Testspace URL.
+The first step when getting started is to create your Testspace Organization. When you [sign into](https://www.testspace.com/pricing.html) Testspace to create your account, enter an `Organization Name` to be used as the subdomain for your Testspace URL.
 
 ```
    my-organization-name.testspace.com
@@ -22,7 +22,7 @@ Select the `New Project` button to bring up the dialog below.
 
 Provide a Project name and optional description - notification settings can be changed at anytime. 
 
-Select `SUBMIT`, and then select the name-link for your new project to go to the `Spaces tab` which should look as follows.
+Select `SUBMIT`, and then select the **project-name-link** for your new project to go to the `Spaces tab` which should look as follows.
 
 ![New Project Spaces Tab](images/new-project-spaces-tab.png)
 
@@ -37,7 +37,7 @@ You're now ready to download the Testspace client to start pushing data
 ---
 ### Installing the Testspace Client
 
-A simple command line client is used to push test results and other metrics to the Testpace server.
+A [simple command line client](https://help.testspace.com/reference:client-reference) is used to push test results and other metrics to the Testpace server.
 
 If installing on linux, you can use the following command (if $HOME/bin exists)
 ```
@@ -59,7 +59,7 @@ or from a Power Shell console
   Invoke-WebRequest https://testspace-client.s3.amazonaws.com/testspace-windows.zip -outfile testspace-windows.zip
 ```
 
-After downloading and adding to `$HOME/bin` to path if required, you can check the client installation by typing 
+After downloading and adding `$HOME/bin` to path if required, you can check the client installation by typing 
 ```
   testspace -v
   
@@ -69,7 +69,7 @@ Copyright (C) 2017 S2 Technologies, Inc.
   
 ---
 ### Configuring your Testspace URL
-The command to push test results to the server using the Testpace Client takes the following forms.  If pushing to `Private Testpace Project`, you will need to provide your access token for credentials to access the Project.
+The command to push test results to the server using the Testpace Client takes the following forms.  If pushing to a `Private Testpace Project`, you will need to provide your [access token] for credentials to access the Project. The token is obtained from your `User Settings` described [here](https://help.testspace.com/organization:users)
 ```
   testspace results.xml access-token@orgnization-name.testspace.com/project-name/space-name"
 ```
