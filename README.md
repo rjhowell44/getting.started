@@ -2,7 +2,7 @@
 
 ## Getting Started with Testspace Standalone Projects.
 
-The first step when getting started is to create your Testspace Organization. When you sign into Testspace to create your account, select and `Organization Name` to be used as the subdomain for your Testspace URL.
+The first step when getting started is to create your Testspace Organization. When you [sign into](https://www.testspace.com/pricing.html) Testspace to create your account, select and `Organization Name` to be used as the subdomain for your Testspace URL.
 
 ```
    my-organization-name.testspace.com
@@ -59,6 +59,15 @@ or from a Power Shell console
   Invoke-WebRequest https://testspace-client.s3.amazonaws.com/testspace-windows.zip -outfile testspace-windows.zip
 ```
 
+After downloading and adding to `$HOME/bin` to path if required, you can check the client installation by typing 
+```
+  testspace -v
+  
+Testspace, version 1.8.490
+Copyright (C) 2017 S2 Technologies, Inc.  
+```  
+  
+---
 ### Configuring your Testspace URL
 The command to push test results to the server using the Testpace Client takes the following forms.  If pushing to `Private Testpace Project`, you will need to provide your access token for credentials to access the Project.
 ```
@@ -77,43 +86,39 @@ The command to push the same restuls.xml file after configuring the URL as above
   tetsspace results.xml space-name
 ```
 
+---
 ### Pushing Sample Data from this Repository
 
+Once you've installed the Testspace client, and configured the Testspace URL as described above, there are a number of data files in this repository that can pushed from the console for trial and refence. 
 
+  * results*.xml - three test result files in JUnit XML format
+  * output.log - log file produced during build
+  * analysis.xml - static analysis output
+  * coverage.xml - code coverage analysis output
+  * metrics.log - log file produced during test, with metrics to chart overtime
+  * metrics.csv - comma separated values (CSV) file with the numeric values from the metrics.log file. 
 
+#### Example 1. Pushing a Single Test Result File
+The following example will push a single test result file to your new space.
+```
+  testspace results1.xml my-organization.testspace.com/my-first-space"
+```
+Once pushed successfully, you should be able to review the results from your new Space
 
+#### Example 2. Pushing Multiple Test Results Files
+The following example will aggregate and push all three test result files to your new space.
+```
+  testspace results*.xml my-organization.testspace.com/my-first-space"
+```
 
+#### Example 3. Pushing Log Files with Test Results
+The following example will push the `output.log` file along with test result files to your new space.
+```
+  testspace results*.xml output.log my-organization.testspace.com/my-first-space"
+```
 
-## Publishing sample for demonstrating Testspace 
-
-Contains a set of simple files to show publishing test results, code coverage, and static analysis. 
-
-***
-
-Publishing **Test Content** using www.testspace.com.
-
-[![Space Health](https://samples.testspace.com/spaces/833/badge)](https://samples.testspace.com/spaces/833 "Test Cases")
-[![Space Metric](https://samples.testspace.com/spaces/833/metrics/833/badge)](https://samples.testspace.com/spaces/833/schema/Code%20Coverage "Code Coverage (lines)")
-[![Space Metric](https://samples.testspace.com/spaces/833/metrics/834/badge)](https://samples.testspace.com/spaces/833/schema/Static%20Analysis "Static Analysis (issues)")
-
-
-***
-
-Push Content using **Testspace client**: 
-
-<pre>
-curl -s https://testspace-client.s3.amazonaws.com/testspace-linux.tgz | sudo tar -zxvf- -C /usr/local/bin
-testspace @.testspace.txt $TESTSPACE_TOKEN/$GITHUB_ORG:$REPO_NAME/$BRANCH_NAME#$BUILD_NUMBER
-</pre> 
-
-Checkout the published [Test Content](https://samples.testspace.com/projects/testspace-samples:getting.started). Note that the `.testspace.txt` file contains the [set of files](http://help.testspace.com/how-to:publish-content#publishing-via-content-list-file) to publish. 
-
-***
-
-To replicate this sample: 
-  - Setup account at www.testspace.com.
-  - Create a Environment variable called `TESTSPACE_TOKEN`
-     - `TESTSPACE_TOKEN` = `credentials@Your-Org-Name.testspace.com`
-     - `credentials` set to `username:password` or your [access token](http://help.testspace.com/reference:client-reference#login-credentials)
-     - To [use Testspace with a CI system](http://help.testspace.com/how-to:add-to-ci-workflow), store `TESTSPACE_TOKEN` as a secure environment variable
- 
+#### Example 3. Pushing Static Analysis and Code Coverage with Test Results
+The following example will push the `output.log` file along with test result files to your new space.
+```
+  testspace results*.xml output.log my-organization.testspace.com/my-first-space"
+```
