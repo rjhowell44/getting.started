@@ -5,5 +5,5 @@ This GitHub repository is a companion site for the [GitHub CI Example](https://h
 
 This repository can be forked as a working example of using Testspace in the GitHub workflow.
 
-> [Sign-in](https://www.testspace.com/pricing.html) to Testspace with your GitHub credentials and create a free, open account to try this simple example.
+> [Sign-in](https://www.testspace.com/pricing.html) to Testspace with your GitHub credentials and create a `free` open account to try this simple example.
   
